@@ -21,14 +21,14 @@ const Header = () => {
                 {
                     categories.map(category => (
                         <Link key={category.slug}  href={`/category/${category.slug}`}>
-                            <div className="md:float-right mt-2 algin-middle text-white ml-4 font-semibold">
+                            <div className="md:float-right mt-2 algin-middle text-white ml-4 font-semibold cursor-pointer">
                                 {category.name}
                             </div>
-                        <Link>
+                        </Link>
                     ))
                 }
-
             </div>
+
         </div>
     </div>
   )
